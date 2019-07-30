@@ -1,0 +1,36 @@
+resolver: lts-13.19 # GHC 8.6.4
+packages:
+- lambdabot
+- lambdabot-core
+- lambdabot-haskell-plugins
+- lambdabot-irc-plugins
+- lambdabot-misc-plugins
+- lambdabot-novelty-plugins
+- lambdabot-reference-plugins
+- lambdabot-trusted
+
+allow-newer: true
+
+extra-deps:
+- IOSpec-0.3.1.1@sha256:7458ea286386d76af1cd6e5b364914914783cdc7363a4381c795d053be129824,2773
+- QuickCheck-safe-0.1.0.6@sha256:33e54c3a7a1378d0547f104922126cb77d3e458bc7e97e4fa55e5acff63876bf,1494
+- arrows-0.4.4.2@sha256:a260222b766da922657e302aa7c0409451913e1e503798a47a213a61ba382460,1235
+- brainfuck-0.1.0.3@sha256:8be683b7b14f95a8a40e7b99b321b4069a9d5a01333acae3fadecab3c19f04bb,941
+- dice-0.1@sha256:7a335456c6b12735bb34dfb8ad099dd257b191c277af1f7715871bd9baf3bfcb,785
+- haskell-src-exts-simple-1.21.0.0@sha256:ecb6e46b58f7d8c5f7333939ab4e38414e012e363b0d0389f3ba6602449accf8,1519
+- hoogle-5.0.17.9@sha256:beb55b392cb15e62ef1183d6adc40117c00eacd3958717a05f244948c6588740,3159
+- lambdabot-social-plugins-5.2@sha256:397022f51c43caedc0f8e2401e03ee5592de92ad8364de233d3db1b77d369322,2396
+- misfortune-0.1.1.2@sha256:d7bb8aa00b7b6c21b75c1da2c22f2e74ecae722fa0a3f807d576f198cddd3e87,6181
+- mueval-0.9.3@sha256:9ecdbdc8f28ed7bc3f6f6cb5c2708e69f3b099db812bd2b8a51730915f7dab9e,2077
+- network-bsd-2.8.1.0@sha256:47cb03786ff5371876582babc72cbd88efbcb96053f5bfbefbc024fa80380bb3,3742
+- show-0.6@sha256:073c283f62d56cab2a2de5455125c7fc2d55642bac4cf0e778ed6525226a44ec,903
+- unlambda-0.1.4.2@sha256:d341ea6667969f1688734d9f86b16b336b7410ab71fd6551b8b8e2f70eed5940,1005
+- Stream-0.4.7.2@sha256:ed78165aa34c4e23dc53c9072f8715d414a585037f2145ea0eb2b38300354c53,1009
+- haskell-src-exts-1.21.0@sha256:02421cacaa48c055551b8e5796efc543301b7ea9527a38e1385403d2b85512fb,4467
+- knob-0.1.1@sha256:8dd62f0470fd829d5c4137b5ecfb0cb9a04a829fa8f436959d460019b3a6f118,1401
+- lazysmallcheck-0.6@sha256:dac7a1e4877681f1260309e863e896674dd6efc1159897b7945893e693f2a6bc,1696
+- network-3.0.1.1@sha256:1a251b790ea98b6f7433f677958f921950780ba6f143d61ba8c0e3f7a9879097,4074
+
+nix:
+  packages: [ pkgconfig pcre zlib ]
+
